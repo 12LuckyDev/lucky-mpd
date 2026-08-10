@@ -1,8 +1,8 @@
 services:
-  mpd:
+  lucky-mpd:
     image: lucky-mpd:latest
 
-    container_name: mpd
+    container_name: lucky-mpd
 
     restart: unless-stopped
 
