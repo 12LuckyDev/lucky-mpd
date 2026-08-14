@@ -1,8 +1,10 @@
-# MPD Docker
+# lucky-mpd
 
 A minimal Docker setup for running [MPD](https://www.musicpd.org/) with ALSA audio output.
 
 The container is designed to run on a Raspberry Pi with access to the host's audio device.
+
+Work great with [lucky-radio-api](https://github.com/12LuckyDev/lucky-radio-api) and the [lucky-mpd](https://github.com/12LuckyDev/lucky-mpd).
 
 ## Build
 

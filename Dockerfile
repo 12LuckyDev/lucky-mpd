@@ -7,6 +7,6 @@ RUN apt-get update && \
     ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
-COPY mpd.conf /etc/mpd.conf
+COPY src/mpd.conf /etc/mpd.conf
 
 CMD ["mpd", "--no-daemon", "/etc/mpd.conf"]

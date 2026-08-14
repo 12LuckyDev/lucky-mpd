@@ -1,6 +1,7 @@
 @echo off
 set IMAGE=lucky-mpd:latest
-set OUTPUT=lucky-mpd.tar
+set BUILD_DIR=build
+set OUTPUT=%BUILD_DIR%\lucky-mpd.tar
 
 echo.
 echo === Building %IMAGE% for Raspberry Pi (linux/arm64) ===
@@ -22,6 +23,7 @@ echo.
 echo === Exporting image ===
 echo.
 
+if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
 docker save -o %OUTPUT% %IMAGE%
 
 if errorlevel 1 (
